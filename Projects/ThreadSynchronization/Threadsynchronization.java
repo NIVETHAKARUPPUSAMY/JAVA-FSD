@@ -1,4 +1,4 @@
-package Multithreading_Exceptionhandling;
+package ThreadSynchronization;
 
 import java.util.*;
 import java.io.*;

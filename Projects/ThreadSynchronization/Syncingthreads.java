@@ -1,6 +1,6 @@
-package Multithreading_Exceptionhandling;
+package ThreadSynchronization;
 
-public class Syncingthreads {
+public class Syncingthreads  {
     public static void main(String args[]) 
     { 
     	Threadsynchronization snd = new Threadsynchronization(); 

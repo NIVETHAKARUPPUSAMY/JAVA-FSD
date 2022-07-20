@@ -1,4 +1,4 @@
-package Multithreading_Exceptionhandling;
+package Threads;
 
 public class Runnablethreadcreation extends Thread {
     public static int myCount = 0;

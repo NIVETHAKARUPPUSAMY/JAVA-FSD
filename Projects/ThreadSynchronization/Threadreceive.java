@@ -1,4 +1,5 @@
-package Multithreading_Exceptionhandling;
+package ThreadSynchronization;
+
 
 public class Threadreceive extends Thread{
 	
