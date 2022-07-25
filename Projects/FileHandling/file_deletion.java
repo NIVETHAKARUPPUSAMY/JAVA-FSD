@@ -27,7 +27,7 @@ public class file_deletion {
 	            System.out.println("Invalid permissions."); 
 	        } 
 	          
-	        System.out.println("Deletion successful."); 
+	        System.out.println("Test File 2 Deletion successful."); 
 	    } 
 
 
