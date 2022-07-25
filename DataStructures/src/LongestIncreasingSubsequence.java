@@ -1,30 +1,20 @@
 import java.util.*;
 public class LongestIncreasingSubsequence {
 
-		static int max_ref; 
-		static int _lis(int arr[], int n)
-		{			
-			if (n == 1)
-				return 1;	
-			int res, max_ending_here = 1;
-			for (int i = 1; i < n; i++) {
-				res = _lis(arr, i);
-				if (arr[i - 1] < arr[n - 1] && res + 1 > max_ending_here)
-					max_ending_here = res + 1;
-			}
-			
-			if (max_ref < max_ending_here)
-				max_ref = max_ending_here;
-			return max_ending_here;
-		}
-
-		static int lis(int arr[], int n)
-		{
-			
-			max_ref = 1;
-			_lis(arr, n);
-			return max_ref;
-		}
+	static int incre_subseq(int my_arr[], int arr_len){
+	      int seq_arr[] = new int[arr_len];
+	      int i, j, max = 0;
+	      for (i = 0; i < arr_len; i++) 
+	         seq_arr[i] = 1;
+	      for (i = 1; i < arr_len; i++) 
+	      for (j = 0; j < i; j++) 
+	      if (my_arr[i] > my_arr[j] && seq_arr[i] < seq_arr[j] + 1)
+	      seq_arr[i] = seq_arr[j] + 1;
+	      for (i = 0; i < arr_len; i++) 
+	      if (max < seq_arr[i])
+	      max = seq_arr[i];
+	      return max;
+	   }
 
 		public static void main(String args[])
 		{
@@ -37,7 +27,8 @@ public class LongestIncreasingSubsequence {
 			for(int i=0;i<n;i++) {
 				arr[i]=sc.nextInt();			
 				}
-			System.out.println("Length of lis is "+ lis(arr, n) + "\n");
+			System.out.println("The length of the longest increasing subsequence is " +  incre_subseq(arr, n));
 		}
+		
 }
 	
