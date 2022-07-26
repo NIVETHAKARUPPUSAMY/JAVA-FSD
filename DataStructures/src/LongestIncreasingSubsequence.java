@@ -27,7 +27,7 @@ public class LongestIncreasingSubsequence {
 			for(int i=0;i<n;i++) {
 				arr[i]=sc.nextInt();			
 				}
-			System.out.println("The length of the longest increasing subsequence is " +  incre_subseq(arr, n));
+			System.out.println("The length of the longest increasing subsequence is " + incre_subseq(arr, n));
 		}
 		
 }
