@@ -1,24 +1,22 @@
+package AccessSpecifier;
 
-//Private Access specifier
-
-
-public class AccessSpecifier1 {
-
+public class Private
+{
 	public static void main(String[] args) {
 
 		System.out.println("Private access specifier");
-		privatspecifier11 priv=new privatspecifier11();
+		PrivateDisplay priv=new PrivateDisplay();
 		priv.display();
 		
 	}
 }
 
-
-class 	privatspecifier11{
+class 	PrivateDisplay
+{
 	void display()
 	{
 		System.out.println("In Private access specifier");
 		
 	}
-
 }
+

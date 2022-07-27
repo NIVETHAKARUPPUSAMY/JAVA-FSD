@@ -1,6 +1,6 @@
+package AccessSpecifier;
 
-public class AcsessSpecifier2 {
-
+public class Default {
 	public static void main(String[] args) {
 		
 		System.out.println("Default access specifier");
@@ -51,16 +51,3 @@ class 	publicspecifier{
 		System.out.println("In Public access specifier");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

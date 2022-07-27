@@ -21,6 +21,8 @@ public class QuickSort {
 	arr[highIndex] = temp;
 	return i+1;
 	}
+	
+	
 	void sort(int arr[], int lowIndex, int highIndex)
 	{
 	if (lowIndex < highIndex)
@@ -30,6 +32,8 @@ public class QuickSort {
 	sort(arr, pi+1, highIndex);
 	}
 	}
+	
+	
 	static void printArray(int arr[])
 	{
 		int n = arr.length;
@@ -37,6 +41,8 @@ public class QuickSort {
 		System.out.print(arr[i]+" ");
 		System.out.println();
 		}
+	
+	
 public static void main(String args[])
 {
 int arr[] = {101, 37, 68, 29, 11, 5};

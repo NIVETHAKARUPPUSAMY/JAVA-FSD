@@ -1,6 +1,7 @@
+package Practise_Projects;
 
-public class typecastingchallenge {
-
+public class Typecasting_Challenge {
+	
 	public static void main(String[] args) {
 		
 		//Explicit conversion
