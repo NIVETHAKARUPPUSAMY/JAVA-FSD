@@ -24,7 +24,6 @@ public class Main {
         int  slen = arr1.length;
         for(int i=0; i<slen;i++){
             System.out.println(arr[i]);
-            // display the all the Strings mentioned in the String array
         }
         ArrayList<Integer> arrlist = new ArrayList<Integer>();
         ArrayList<Integer> expenses = new ArrayList<Integer>();
@@ -90,15 +89,28 @@ public class Main {
         System.out.println("Closing your application... \nThank you!");
             }
     private static void searchExpenses(ArrayList<Integer> arrayList) {
-        int leng = arrayList.size();
+        int length = arrayList.size();
         System.out.println("Enter the expense you need to search:\t");
         Scanner scanner=new Scanner(System.in);
         int expense=scanner.nextInt();
         int result=Collections.binarySearch(arrayList,expense);
-        System.out.println("Search result = " +result);
+        System.out.println("Search result = " + getIndex(arrayList, expense));
     }
-    private static void sortExpenses(ArrayList<Integer> arrayList) {
+   
+	private static int getIndex(ArrayList<Integer> arrayList, int expense) {
+		if (arrayList == null) return -1;
+		 int len = arrayList.size();
+        int i = 0;
+        while (i < len) {
+            if (arrayList.get(i) == expense) return i;
+            else i=i+1;
+        }
+        return -1;
+	}
+	private static void sortExpenses(ArrayList<Integer> arrayList) {
         int arrlength =  arrayList.size();
        Collections.sort(arrayList);
+       System.out.println("Sort result = " +arrayList);
+       System.out.println("");
     }
 }
