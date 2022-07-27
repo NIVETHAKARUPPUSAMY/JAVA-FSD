@@ -1,7 +1,7 @@
 
 public class Range_query { 
     static int k = 16;
-    static int N = 100000; 
+    static int N = 100; 
     static long table[][] = new long[N][k + 1]; 
     static void buildSparseTable(int arr[], int n) 
     { 

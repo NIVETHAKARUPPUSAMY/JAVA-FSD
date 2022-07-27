@@ -9,7 +9,6 @@ public class AccessSpecifier1 {
 		System.out.println("Private access specifier");
 		privatspecifier11 priv=new privatspecifier11();
 		priv.display();
-
 		
 	}
 }

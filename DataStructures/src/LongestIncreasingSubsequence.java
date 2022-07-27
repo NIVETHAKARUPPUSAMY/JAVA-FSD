@@ -20,14 +20,15 @@ public class LongestIncreasingSubsequence {
 		{
 			int n;
 			System.out.println("Enter the value for n:  ");
-			Scanner sc= new Scanner(System.in);
-			n=sc.nextInt();
-			System.out.println("Enter "+n+" values  :");
-			int arr []=new int [n];
-			for(int i=0;i<n;i++) {
-				arr[i]=sc.nextInt();			
-				}
-			System.out.println("The length of the longest increasing subsequence is " + incre_subseq(arr, n));
+			try (Scanner sc = new Scanner(System.in)) {
+				n=sc.nextInt();
+				System.out.println("Enter "+n+" values  :");
+				int arr []=new int [n];
+				for(int i=0;i<n;i++) {
+					arr[i]=sc.nextInt();			
+					}
+				System.out.println("The length of the longest increasing subsequence is " + incre_subseq(arr, n));
+			}
 		}
 		
 }
