@@ -1,53 +1,55 @@
 package Practise_Projects;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.LinkedHashSet;
+import java.util.Map.Entry;
 import java.util.Random;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class Map {
 public static void main(String[] args) {
 		
-		Random random=new Random();
-		Set<Integer> myset=new HashSet<>();
-		for(int i=0;i<5;i++)
-		{
-			Integer randomnumber=random.nextInt(100);
-			System.out.println(randomnumber);
-			myset.add(randomnumber);
-		}
-		
-		System.out.println("HASH SET ELEMENTS :"+myset);
-	
-	
-	myset=new LinkedHashSet<>();
-	for(int i=0;i<5;i++)
-	{
-		Integer randomnumber=random.nextInt(100);
-		System.out.println(randomnumber);
-		myset.add(randomnumber);
-	}
-	System.out.println("Linked HASH SET ELEMENTS :"+myset);
-	
-	//ASCENDING ORDER VALUES
-	 myset=new TreeSet<>();
-		for(int i=0;i<5;i++)
-		{
-			Integer randomnumber=random.nextInt(100);
-			System.out.println(randomnumber);
-			myset.add(randomnumber);
-		}
-		System.out.println("TREE SET ELEMENTS :"+myset);
-	
-	//Ascending order strings
-	
-	Set<String> names = new TreeSet<>();
-	names.add("xyz");
-	names.add("abc");
-	names.add("hij");
-	names.add("def");
-	System.out.println("Treeset names: " + names);
-	}
+	HashMap<Integer,String> hm=new HashMap<Integer,String>();      
+    hm.put(1,"Tim");    
+    hm.put(2,"Mary");    
+    hm.put(3,"Catie");   
+     
+    System.out.println("\nThe elements of Hashmap are ");  
+    for(Entry<Integer, String> m:hm.entrySet()){    
+     System.out.println(m.getKey()+" "+m.getValue());    
+    }
+    
+   //HashTable
+     
+    Hashtable<Integer,String> ht=new Hashtable<Integer,String>();  
+    
+    ht.put(4,"Ales");  
+    ht.put(5,"Rosy");  
+    ht.put(6,"Jack");  
+    ht.put(7,"John");  
+
+    System.out.println("\nThe elements of HashTable are ");  
+    for(Entry<Integer, String> n:ht.entrySet()){    
+     System.out.println(n.getKey()+" "+n.getValue());    
+    }
+    
+    
+    //TreeMap
+    
+    TreeMap<Integer,String> map=new TreeMap<Integer,String>();    
+    map.put(8,"Annie");    
+    map.put(9,"Carlotte");    
+    map.put(10,"Catie");       
+    
+    System.out.println("\nThe elements of TreeMap are ");  
+    for(Entry<Integer, String> l:map.entrySet()){    
+     System.out.println(l.getKey()+" "+l.getValue());    
+    }    
+    
+ }  
 
 }
