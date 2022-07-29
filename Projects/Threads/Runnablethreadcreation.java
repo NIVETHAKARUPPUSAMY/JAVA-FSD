@@ -6,7 +6,7 @@ public class Runnablethreadcreation extends Thread {
     public void run()
     {
    //Runnable thread
-        while(Runnablethreadcreation.myCount <10)
+        while(Runnablethreadcreation.myCount <5)
         {
             try{
                 System.out.println("Runnable Thread: "+(++Runnablethreadcreation.myCount));
@@ -24,7 +24,7 @@ public class Runnablethreadcreation extends Thread {
         Thread t = new Thread(mrt);
         t.start();
        //main thread 
-        while(Runnablethreadcreation.myCount <10){
+        while(Runnablethreadcreation.myCount <5){
             try
             {
                 System.out.println("Main Thread: "+(++Runnablethreadcreation.myCount));
