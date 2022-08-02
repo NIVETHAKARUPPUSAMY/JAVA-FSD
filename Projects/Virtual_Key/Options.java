@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Options {
 
 	
-	public static void handleWelcomeScreenInput() {
+	public static void WelcomeScreen() {
 		boolean running = true;
 		Scanner sc = new Scanner(System.in);
 		do {
@@ -32,7 +32,7 @@ public class Options {
 				}
 			} catch (Exception e) {
 				System.out.println(e.getClass().getName());
-				handleWelcomeScreenInput();
+				WelcomeScreen();
 			} 
 		} while (running == true);
 	}

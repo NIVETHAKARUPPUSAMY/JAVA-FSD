@@ -8,7 +8,7 @@ import java.nio.file.*;
 
 public class Main_file {
 	
-	public static void createMainFolderIfNotPresent(String folderName) {
+	public static void createMainKeyFolderIfNotPresent(String folderName) {
 		File file = new File(folderName);
 
 		// If file doesn't exist, create the main folder
@@ -18,7 +18,7 @@ public class Main_file {
 	}
 
 	public static void displayAllFiles(String path) {
-		Main_file.createMainFolderIfNotPresent("Main_Key");
+		Main_file.createMainKeyFolderIfNotPresent("Main_Key");
 		
 		System.out.println("Displaying all files with directory structure in ascending order\n");
 
@@ -62,7 +62,7 @@ public class Main_file {
 	}
 
 	public static void createFile(String fileToAdd, Scanner sc) {
-		Main_file.createMainFolderIfNotPresent("Main_Key");
+		Main_file.createMainKeyFolderIfNotPresent("Main_Key");
 		Path pathToFile = Paths.get("./Main_Key/" + fileToAdd);
 		try {
 			Files.createDirectories(pathToFile.getParent());
