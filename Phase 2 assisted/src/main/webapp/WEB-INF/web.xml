@@ -44,6 +44,14 @@
         <url-pattern>/Welcome</url-pattern>
     </servlet-mapping>
     
+  <servlet>
+    <servlet-name>DemoJDBC</servlet-name>
+    <servlet-class>DemoJDBC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DemoJDBC</servlet-name>
+    <url-pattern>/init</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>
