@@ -7,10 +7,11 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.bean.product;
+import com.bean.Product;
+
 
 public class ProductDao {
-	public int storeProduct(product prdt) {
+	public int storeProduct(Product prdt) {
 		try {
 			Configuration con = new Configuration();
 			con.configure("hibernate.cfg.xml");
@@ -27,4 +28,6 @@ public class ProductDao {
 			return 0;
 		}
 	}
+
+
 }

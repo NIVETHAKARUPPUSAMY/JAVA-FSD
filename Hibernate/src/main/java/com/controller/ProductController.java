@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bean.product;
+import com.bean.Product;
 import com.service.ProductService;
 
 public class ProductController extends HttpServlet {
@@ -30,14 +30,14 @@ public class ProductController extends HttpServlet {
          PrintWriter pw = response.getWriter();
 		 response.setContentType("text/html");
 		 
-		int pid = Integer.parseInt(request.getParameter("pid"));
+		int id = Integer.parseInt(request.getParameter("id"));
 	    String pname = request.getParameter("pname");
-		String color = request.getParameter("color");
+		
 		 
-		product p = new product();
-		p.setPid(pid);
+		Product p = new Product();
+		p.setid(id);
 		p.setPname(pname);
-		p.setColor(color);
+		
 		
       ProductService ps = new ProductService();
 		

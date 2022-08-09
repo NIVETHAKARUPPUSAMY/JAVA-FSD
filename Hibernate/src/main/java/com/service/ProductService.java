@@ -1,12 +1,10 @@
 package com.service;
 
-import javax.servlet.annotation.WebServlet;
-
-import com.bean.product;
+import com.bean.Product;
 import com.dao.ProductDao;
 public class ProductService {
 	ProductDao pd = new ProductDao();
-	public String storeProduct(product prdt) {
+	public String storeProduct(Product prdt) {
 		/*if(prdt.ge()<100) {
 			return "Product price must be > 100";
 		}else */
