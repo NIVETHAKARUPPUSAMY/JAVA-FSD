@@ -1,0 +1,5 @@
+package com.samples.Spring_core_DI.Propetyfile;
+
+public class MYDAO {
+
+}
