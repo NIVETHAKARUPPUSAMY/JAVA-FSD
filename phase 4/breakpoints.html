@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: darkgreen;
+        height: 80vh;
+      }
+      @media (max-width: 575px) {
+        .parent {
+          background-color: crimson;
+          height: 80vh;
+        }
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .parent {
+          background-color: blue;
+          height: 80vh;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .parent {
+          background-color: aquamarine;
+          height: 80vh;
+        }
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .parent {
+          background-color: orange;
+          height: 80vh;
+        }
+      }
+      @media (min-width: 1200px) {
+        .parent {
+          background-color: pink;
+          height: 80vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">BOX</div>
+  </body>
+  </html>
+  
